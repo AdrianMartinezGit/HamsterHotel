@@ -1,13 +1,38 @@
-@font-face {
-    font-family: "Dosis";
-    src: url('assets/fonts/Dosis.ttf') format("truetype");
-}
 .custom-font { 
-    font-family: "Dosis", Verdana, Tahoma;
-    font-size: 26px;
+    font-family: 'Dosis', sans-serif, Tahoma;
+    font-size: 20px;
+    color: white;
 }
 
 .navbar-bg-color {
     background-color: #000324;
 }
 
+.logo-img {
+    text-align: center;
+}
+
+.header-img {
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover;
+}
+
+.header-overlay {
+    padding: 0;
+}
+
+.parallax {
+    background-image: url('./assets/header.jpg');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* RESPONSIVE ELEMENTS FOR PHONES/TABLET */
+@media only screen and (max-device-width: 1366px) {
+
+}
