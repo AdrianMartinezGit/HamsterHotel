@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Dosis";
+    src: url('assets/fonts/Dosis.ttf') format("truetype");
+}
+.custom-font { 
+    font-family: "Dosis", Verdana, Tahoma;
+    font-size: 26px;
+}
+
+.navbar-bg-color {
+    background-color: #000324;
+}
+
