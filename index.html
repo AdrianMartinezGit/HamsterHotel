@@ -14,51 +14,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid navbar-bg-color">
-      <div class="row custom-font-20px navbar-text-color align-items-end">
-        <div class="col text-end pb-3"></div>
-        <div class="col text-end pb-3"></div>
-        <div class="col text-end pb-3"></div>
-        <div class="col text-end pb-3"></div>
-        <div class="col text-end pb-3">Overview</div>
-        <div class="col text-end pb-3">Rooms</div>
-        <div class="col text-end pb-3">Packages</div>
-        <div class="col logo-img pb-3">
-          <img src="./assets/Logo.png" alt="Hamster Logo">
+    <div class="container-fluid navbar-bg-color pt-2 pb-3">
+      <div class="row justify-content-center align-items-end custom-font-20px navbar-text-color">
+        <div class="col-sm-2">
+          <div class="row text-end">
+            <div class="col"><a href="#Overview">Overview</a></div>
+            <div class="col"><a href="#Rooms">Rooms</a></div>
+            <div class="col"><a href="#Packages">Packages</a></div>
+          </div>
         </div>
-        <div class="col text-start pb-3">Amenities</div>
-        <div class="col text-start pb-3">Contact</div>
-        <div class="col text-start pb-3">Reserve</div>
-        <div class="col text-start pb-3"></div>
-        <div class="col text-start pb-3"></div>
-        <div class="col text-start pb-3"></div>
-        <div class="col text-start pb-3"></div>
-      </div>
-    </div>    
-
-    <div class="parallax-container d-flex justify-content-center">
-      <div class="header-rectangle">
-        <div class="header-overlay text-center">
-          <h1 class="custom-font-45px">Run on the wheel of luxury</h1>
-          <p class="custom-font-16px">Explore everything the beach has to offer in our relaxing resort.</p>
+        <div class="col-lg-1">
+          <div class="row">
+            <img src="./assets/Logo.png" alt="Hamster Wheel Logo" class="hamster-wheel-logo-img">
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="row text-start">
+            <div class="col"><a href="#Amenities">Amenities</a></div>
+            <div class="col"><a href="#Contact">Contact</a></div>
+            <div class="col"><a href="#Reserve">Reserve</a></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container pt-5 pb-5">
+    <div class="container-fluid overview-container">
+      <div class="header-rectangle">
+        <div class="header-overlay d-flex align-items-center" style="line-height: 50px;">
+          <div class="col text-center">
+            <div class="row"><h1 class="custom-font-45px">Run on the wheel of luxury</h1></div>
+            <div class="row"><p class="custom-font-16px">Explore everything the beach has to offer in our relaxing resort.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-5 pb-5" id="Overview">
       <div class="row">
-        <div class="col"><img src="./assets/hamsterhomejpg.jpg" alt="..."></div>
+        <div class="col d-flex justify-content-center"><img src="./assets/hamsterhomejpg.jpg" alt="..." style="width: 100%; height: 420px; object-fit: cover;"></div>
         <div class="col">
           <div class="row">
             <h1 class="custom-font-35px overview-text">Welcome to a hamster's paradise</h1>
             <p class="custom-font-16px overview-text">
               Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed for the small mammal with extravagance in mind. 
-              Escape to the warm comforts of stunning rooms, a relaxing spa, and a pool with a beach side view. Inspired by the warm beauty of the 
+              Escape to the warm comforts of stunning rooms, a relaxing spa, and a pool with a beach side view. 
+              <br><br>
+              Inspired by the warm beauty of the 
               California Coast, we invite you to enjoy the rich accommodations along with our unmatched luxury. Discover the satisfaction of indulging 
               in our quality rooms, and thank you for choosing La Petite Maison.
             </p>
           </div>
-          <div class="row d-flex justify-content-end align-content-end">
+          <div class="row d-flex justify-content-evenly align-items-end pt-5">
             <img src="./assets/awardfinest.png" alt="..." class="award-img">
             <img src="./assets/awardsatisfaction.png" alt="..." class="award-img">
             <img src="./assets/awardgenuine.png" alt="..." class="award-img">
@@ -67,13 +73,13 @@
       </div>
     </div>
 
-    <div class="container-fluid room-container">
+    <div class="container-fluid room-container" id="Rooms">
       <h1 class="custom-font-35px navbar-text-color text-center pt-5">Our Rooms</h1>
 
-      <div class="row justify-content-center pt-5">
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/room1.jpg" class="card-img-top" alt="...">
+      <div class="row pb-5">
+        <div class="col d-flex justify-content-center pt-5">
+          <div class="card" style="width: 25rem; height: 100%; border-radius: 0; border: 0;">
+            <img src="./assets/room1.jpg" class="card-img-top" style="border-radius: 0;" alt="...">
             <div class="card-body">
               <h1 class="card-title custom-font-25px">Queen Room</h1>
               <h5 class="card-subtitle custom-font-16px-alt package-text-bold">850 SQ FT room with city view</h5>
@@ -86,9 +92,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/room3.jpg" class="card-img-top" alt="...">
+        <div class="col d-flex justify-content-center pt-5">
+          <div class="card" style="width: 25rem; height: 100%; border-radius: 0; border: 0;">
+            <img src="./assets/room3.jpg" class="card-img-top" style="border-radius: 0;" alt="...">
             <div class="card-body">
               <h1 class="card-title custom-font-25px">King Room</h1>
               <h5 class="card-subtitle custom-font-16px-alt package-text-bold">950 SQ FT room with beach view</h5>
@@ -101,9 +107,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/room2.jpg" class="card-img-top" alt="...">
+        <div class="col d-flex justify-content-center pt-5">
+          <div class="card" style="width: 25rem; height: 100%; border-radius: 0; border: 0;">
+            <img src="./assets/room2.jpg" class="card-img-top" style="border-radius: 0;" alt="...">
             <div class="card-body">
               <h1 class="card-title custom-font-25px">Beach Side Suite</h1>
               <h5 class="card-subtitle custom-font-16px-alt package-text-bold">1500 SQ FT Suite with beach view</h5>
@@ -120,9 +126,11 @@
       </div>
     </div>
 
-    <div class="container packages-container pt-5 pb-5">
+    <div class="container packages-container pt-5 pb-5" id="Packages">
+      <h1 class="custom-font-35px overview-text text-center pt-5 pb-5">Packages</h1>
+
       <div class="col">
-        <div class="row">
+        <div class="row pb-5">
           <div class="col"><img src="./assets/hamsterwedding.jpg" alt=""></div>
           <div class="col">
             <h1 class="custom-font-25px">Beach Wedding package</h1>
@@ -133,7 +141,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row pb-5">
           <div class="col">
             <h1 class="custom-font-25px">Full Bloom Package</h1>
             <h5 class="custom-font-16px-alt price-text-color">Starting US $1,000.00</h5>
@@ -155,33 +163,33 @@
       </div>
     </div>
 
-    <div class="container-fluid amenities-container">
+    <div class="container-fluid amenities-container" id="Amenities">
       <h1 class="custom-font-35px navbar-text-color text-center pt-5">Amenities</h1>
       <p class="custom-font-16px navbar-text-color text-center">Here at La Petite Maison, we invite you to enjoy our services in hopes that you have the most relaxing stay we can provide.</p>
-      <div class="row custom-font-20px-alt navbar-text-color justify-content-center">
-        <div class="col ">
-          <div class="row"><img src="./assets/24hour.png" alt="..."></div>
-          <div class="row">Testing</div>
+      <div class="row custom-font-20px-alt navbar-text-color pt-5">
+        <div class="col">
+          <div class="row d-flex justify-content-center"><img src="./assets/24hour.png" alt="..."></div>
+          <div class="row text-center"><p>24 Hour Room Service</p></div>
         </div>
         <div class="col">
-          <div class="row"><img src="./assets/breakfast.png" alt="..."></div>
-          <div class="row">Testing</div>
+          <div class="row d-flex justify-content-center"><img src="./assets/breakfast.png" alt="..."></div>
+          <div class="row text-center"><p>Complimentary Breakfast</p></div>
         </div>
         <div class="col">
-          <div class="row"><img src="./assets/valet.png" alt="..."></div>
-          <div class="row">Testing</div>
+          <div class="row d-flex justify-content-center"><img src="./assets/valet.png" alt="..."></div>
+          <div class="row text-center"><p>Valet Parking</p></div>
         </div>
         <div class="col">
-          <div class="row"><img src="./assets/pool.png" alt="..."></div>
-          <div class="row">Testing</div>
+          <div class="row d-flex justify-content-center"><img src="./assets/pool.png" alt="..."></div>
+          <div class="row text-center"><p>Beachside Pool</p></div>
         </div>
       </div>
     </div>
 
-    <div class="container pt-5 pb-5">
+    <div class="container pt-5 pb-5" id="Contact">
       <div class="reserve-rectangle">
         <h1 class="custom-font-35px navbar-text-color text-center pt-5">Reserve a Room</h1>
-        <div class="row custom-font-16px-alt navbar-text-color">
+        <div class="row custom-font-16px-alt navbar-text-color pt-1">
           <div class="col">
             <p>Check-in</p>
             <input type="text">
@@ -198,16 +206,15 @@
             <p>Room Type</p>
             <input type="text">
           </div>
-          <div class="col">
-            <br>
-            <button>Check Availability</button>
+          <div class="col d-flex align-items-end">
+            <input type="submit" value="Check Availability" class="btn btn-primary">
           </div>
         </div>
       </div>
       <img src="./assets/hamsterreserve.jpg" alt="..." class="reserve-rectangle-img">
     </div>
 
-    <div class="container-fluid footer-container text-center custom-font-16px-alt navbar-text-color">
+    <div class="container-fluid footer-container text-center custom-font-16px-alt navbar-text-color" id="Reserve">
       <img src="./assets/Logo.png" alt="..." class="pt-5 pb-5">
       <p>123 Sunflower Seed Rd., Cavia, California 95205</p>
       <p>©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.</p>

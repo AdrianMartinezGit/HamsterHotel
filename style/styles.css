@@ -53,6 +53,8 @@
 .header-overlay {
     padding: 0; 
     color: #E5FEFF;
+    height: 100%;
+    width: 100%;
 }
 
 .overview-text {
@@ -65,7 +67,18 @@
     color: white;
     width: 900px;
     height: 230px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #4388ff;
+}
+a:link:active {
+    border: 1px solid white;
 }
 
 .reserve-rectangle {
@@ -88,11 +101,12 @@
     object-fit: cover;
 }
 
-.parallax-container {
+.overview-container {
     background-image: url('../assets/header.jpg');
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-size: cover;
+    background-position-y: -410px;
 }
 
 .award-img {
@@ -103,7 +117,7 @@
 .room-container {
     background-image: url('../assets/bg2.jpg');
     width: 100%;
-    height: 720px;
+    height: 100%;
     background-size: cover;
 }
 
@@ -116,7 +130,7 @@
 .amenities-container {
     background-image: url('../assets/bg.jpg');
     width: 100%;
-    height: 550px;
+    height: 100%;
     background-size: cover;
 }
 
@@ -125,10 +139,12 @@
     height: 128px;
 }
 
-/* RESPONSIVE ELEMENTS FOR PHONES/TABLET 
-@media only screen and (max-device-width: 1366px) {
-    .parallax-container { 
-        background-attachment: scroll;
-    }
+.hamster-wheel-logo-img {
+    width: 100%;
 }
-/*
+
+@media screen and (max-width: 991px){
+    .hamster-wheel-logo-img {
+        width: 50%;
+    }
+  }
