@@ -143,8 +143,8 @@ a:link:active {
     width: 100%;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 800px){
     .hamster-wheel-logo-img {
-        width: 50%;
+        width: 25%;
     }
-  }
+}
